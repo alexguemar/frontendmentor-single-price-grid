@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+:root {
+  --c-cyan: hsl(179, 62%, 43%);
+  --c-yellow: hsl(71, 73%, 54%);
+  --c-white: hsl(0, 0%, 100%);
+  --c-gray: hsl(204, 43%, 93%);
+  --c-grayish: hsl(218, 22%, 67%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--c-gray);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Karla", sans-serif;
+}
+
+li {
+  list-style: none;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 699px;
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+.wrapper {
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px 0.5px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+  font-size: clamp(20px, 3.5vw, 24px);
+  line-height: normal;
+  color: var(--c-cyan);
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.join {
+  background-color: var(--c-white);
+  padding: 29px 24px;
+}
+
+.subscription,
+.why {
+  padding: 25px 24px;
+  color: var(--c-white);
+}
+
+.join .text {
+  margin: 24px 0 16px;
+  font-size: clamp(15px, 3vw, 18px);
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--c-yellow);
+}
+
+.join .description {
+  font-size: clamp(14px, 3vw, 16px);
+  line-height: 26px;
+  color: var(--c-grayish);
+}
+
+.subscription h2,
+.why h2 {
+  margin-bottom: 18px;
+}
+
+.subscription {
+  background-color: var(--c-cyan);
+}
+
+.why {
+  background-color: var(--c-cyan);
+  opacity: 0.85;
+}
+
+.subscription p:first-child {
+  margin-bottom: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.subscription span {
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--c-gray);
+}
+
+.subscription .text {
+  font-weight: 700;
+  font-size: 15px;
+}
+
+.btn {
+  background-color: var(--c-yellow);
+  margin-top: 30px;
+  padding: 14px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 700;
+  border-radius: 0.25rem;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover {
+  box-shadow: 3px 3px 5px 0.5px rgba(0, 0, 0, 0.25);
+  transform: scale(1.05);
+}
+
+.attribution {
+  padding: 2rem;
+  font-size: 14px;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--c-cyan);
+  text-decoration: none;
+}
+.attribution a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 640px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+  }
+  .join {
+    padding: 40px;
+    grid-column: 1 / span 2;
+  }
+
+  .join .text {
+    margin: 25px 0 11px;
+  }
+
+  .subscription,
+  .why {
+    padding: 40px;
+  }
+}
