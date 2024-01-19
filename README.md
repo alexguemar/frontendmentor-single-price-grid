@@ -20,7 +20,7 @@ Users should be able to:
 ### 🔗 Solution Links
 
 - Solution URL in [Github](https://github.com/alexguemar/frontendmentor-single-price-grid)
-- Live Site URL in [Vercel](https://frontendmentor-huddle-landing-seven.vercel.app//)
+- Live Site URL in [Vercel](https://frontendmentor-single-price-grid-iota.vercel.app/)
 
 ## 🚀 My process
 
